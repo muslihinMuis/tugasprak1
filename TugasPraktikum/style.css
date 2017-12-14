@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: open sans,helvetica,arial;
+
+}
+body{
+  background-color: white;
+  padding-bottom: 60px;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header{
+  height: 70px;
+  width: 100%;
+  margin:5px 0;
+  padding: 5px;
+  overflow: hidden;
+}
+#navigasi{
+  margin-right:20px;
+  list-style: none;
+}
+#navigasi li{
+  float:right;
+  padding: 8px 20px;
+}
+#navigasi li a{
+  color:black;
+  font-weight:normal;
+  font-size: 14px;
+  text-decoration: none;
+}
+#navigasi a:hover{
+  font-weight: lighter;
+}
+/*---------------------------------------css gallery.html*/
+.slideshow-container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides{
+  display: none;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.numbertext{
+  color:black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .1}
+  to {opacity: 30}
+}
+
+@keyframes fade {
+  from {opacity: .1}
+  to {opacity: 30}
+}
+@media screen only and (max-width: 480px) {
+  .prev, .next{
+    font-size: 11px
+  }
+}
+
+/*------------------------------------------sampai disini*/
+/*------------------------------------------css home.html*/
+.content{
+  width: 100%;
+  position: relative;
+}
+.image{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   width: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.content:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.detail{
+  white-space: nowrap;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/*-----------------------------------sampai disini*/
+/*------------------------------------about.html*/
+.about{
+  width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+}
+.logo{
+  float: left;
+  margin-right: 20px;
+}
+.about p{
+  margin:15px 0;
+  text-align: justify;
+}
+/*----------------------------------sampai disini*/
+input[type=text], select {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width:100%;
+    background-color: black;
+    color: white;
+    padding: 14px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+}
+.contact{
+    margin-top: 20px;
+    display: block;
+    border-radius: 5px;
+    padding: 20px;
+}
+.footer{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: white;
+  bottom: 0;
+}
+.footer p{
+  font-size: 10px;
+  font-weight: lighter;
+  color: black;
+  float:right;
+  margin-top: 18px;
+  margin-right: 20px;
+  padding: 7px;
+}
+.footer img{
+  float:right;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 20px;
+  padding: 5px;
+}
